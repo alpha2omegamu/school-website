@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student Portal</title>
+      <link 
+         rel="stylesheet" 
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+         crossorigin="anonymous"
+      >
+      <script
+			src="https://kit.fontawesome.com/64d58efce2.js"
+			crossorigin="anonymous"
+		></script>
+      <link rel='stylesheet' href='../css/portal.css'>
+      
+   </head>
+
+   <body>
+      <!--MAIN CONTAINER--------------->
+		<div class="wrapper d-flex align-items-stretch justify-content-center">
+			
+			<!--SIDEBAR---------------------->
+			<nav id="sidebar">
+				<div class="p-3 pt-5">
+					<a href="../src/index.html" class="img logo rounded-circle mb-5" style="background-image: url(../img/logo1.png);"></a>
+					<ul class="list-unstyled text-center">
+						<li>
+							<a href="home.html">
+							<i class="fas fa-home" href='#'></i><br/>
+							Home</a><hr>
+						</li>
+						<li>
+							<a href="calendar.html">
+							<i class="far fa-calendar"></i><br/>
+							Calendar</a><hr>
+						</li>
+						<li>
+							<a href="enrollment.html">
+							<i class="fas fa-chalkboard-teacher"></i><br/>
+							Enrollment</a><hr>
+						</li>
+						<li>
+							<a href="profile.html">
+							<i class="fas fa-user"></i><br/>
+							Profile</a><hr>
+						</li>
+					</ul>
+
+					<div class="footer">
+						<p>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</nav>
+			
+			<!--MAIN BODY-------------------->
+			<div id="content" class="p-4 p-md-5r">
+				<nav class="navbar navbar-expand-lg p-0 mt-0" style='background-color: #F3FAFF; border-bottom: 5px solid #010A4B; box-shadow: none;'>
+					<div class="container-fluid">
+						<div class="col-sm-7">
+							<form>
+								<input type="text" id="dateToday" readonly class="form-control-plaintext">	
+							</form>
+						</div>
+						<div class="collapse navbar-collapse" id="studentPortalNav">
+							<ul class="nav navbar-nav ml-auto">
+								<li class="nav-item">
+									<a href='#'><i class="far fa-bell"></i></a>
+								<li class="nav-item">
+									<a href='#'><i class="fas fa-cog slow-spin fa-5x fa-fw"></i></a>
+								</li>
+								<li class='nav-item'>
+									<a href='login.html'><i	i class="fas fa-sign-out-alt"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+            <div class="row">
+               <div id="notes" class="col-md-6 container p-4 ml-3" style='background: #E8F1F9; height: 40vh'>
+                  <h4 class="mb-4">Notes <i class="far fa-edit"></i></h4>  
+               </div>
+               <div id="calendar" class="col-md-5 container p-4" style='background: #EBE8F9'>
+                  <h4 class="mb-4">Calendar</h4>
+               </div>
+            </div>
+               
+				<div class='row'>
+               <div id="noteList" class="col-md-6 py-4 container ml-3 mt-4" style='background: #F9F7E8; height: 37vh'>
+                  <div class="container row " style='background: transparent; width: 723px; border-bottom: 1px solid brown;'>
+                     <i class="far fa-file-alt" style='font-size: 30px;'></i>
+                     <h6 class="mb-4" style='margin-left: 20px; font-size: 20px;'>Note1</h6>
+                     <i class="far fa-edit" style='font-size: 20px; margin-left: 532px;'></i>
+                     <i class="far fa-trash-alt" style='font-size: 20px; margin-left: 15px;'></i>
+                  </div>
+                  <div class="container row mt-4" style='background: transparent; width: 723px; border-bottom: 1px solid brown;'>
+                     <i class="far fa-file-alt" style='font-size: 30px;'></i>
+                     <h6 class="mb-4" style='margin-left: 20px; font-size: 20px;'>Note2</h6>
+                     <i class="far fa-edit" style='font-size: 20px; margin-left: 532px;'></i>
+                     <i class="far fa-trash-alt" style='font-size: 20px; margin-left: 15px;'></i>
+                  </div>
+                  <div class="container row mt-4" style='background: transparent; width: 723px; border-bottom: 1px solid brown;'>
+                     <i class="far fa-file-alt" style='font-size: 30px;'></i>
+                     <h6 class="mb-4" style='margin-left: 20px; font-size: 20px;'>Note3</h6>
+                     <i class="far fa-edit" style='font-size: 20px; margin-left: 532px;'></i>
+                     <i class="far fa-trash-alt" style='font-size: 20px; margin-left: 15px;'></i>
+                  </div>
+                  <div class="container row mt-4" style='background: transparent; width: 723px;'>
+                     <i class="far fa-file-alt" style='font-size: 30px;'></i>
+                     <h6 class="mb-4" style='margin-left: 20px; font-size: 20px;'>Note4</h6>
+                     <i class="far fa-edit" style='font-size: 20px; margin-left: 532px;'></i>
+                     <i class="far fa-trash-alt" style='font-size: 20px; margin-left: 15px;'></i>
+                  </div>
+                  
+               </div>
+               <div id="calendar" class="col-md-5 container p-4 mt-4" style='background: #EBE8F9'>
+                  
+               </div>
+            </div>
+
+				
+				
+			</div>
+		</div>
+		 
+      <!-- <div class="modal fade" id="subjectInformation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content subject-info p-0 m-0">
+               <div class="modal-header py-3 px-4">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <i class="fas fa-times"></i>
+                  </button>
+               </div>
+               <div class="modal-body text-left">
+                  <img src='/img/profile1.jpeg'>
+                  <h3>Class Details</h3> 
+                  <h6>Instructor: <span id="subject"></span></h6>
+                  <button type="button" class="btn" data-dismiss="modal">
+                     <i class="far fa-envelope"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <h4>Class details</h4>
+         <form>
+            <div class="form-group">
+               <label for="recipient-name" class="col-form-label"><h6>Instructor:</h6></label>
+               <input type="text" class="form-control" id="recipient-name" readonly/>
+            </div>
+            <div class="form-group">
+               <h6>Subject:</h6>
+               <p>Sibika at Kultura</p>
+               <h6>Schedule:</h6>
+               <p>Monday - Friday | 9:00-10:00 AM</p>
+            </div>
+            <div class="form-group">
+               <button type="button" class="btn bg-warning">
+                  <i class="far fa-envelope"></i> Send an email
+               </button>
+            </div>
+         </form>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-----------JS SCRIPTS----------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src='../js/Modal.js'></script>
+      <script src='../js/Announcement.js'></script>
+		<script src='../js/Greetings.js'></script>
+   </body>
+</html>

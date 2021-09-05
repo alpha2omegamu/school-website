@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+*{
+   box-sizing: border-box;
+}
+
+header, section{
+   overflow-x: hidden;
+}
+
+:root{
+   --bodyFont: 'Poppins', sans-serif;
+   --dark-blue: #010A4B;
+   --ocean-blue: #043EA7;
+   --light-blue: #E1F1FD; 
+   --page-bg: #F3FAFF;
+}
+
+body{
+   background-color: var(--page-bg);
+   font-family: var(--bodyFont);
+}
+
+a {
+	transition: .3s all ease;
+	color: var(--ocean-blue);
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+button {
+	transition: .3s all ease;
+	&:hover, &:focus {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: var(--bodyFont);
+	color: black;
+}
+
+h4{
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.slow-spin {
+	-webkit-animation: fa-spin 6s infinite linear;
+	animation: fa-spin 6s infinite linear;
+ }
+.ftco-section{
+	padding: 7em 0;
+}
+
+.ftco-no-pt{
+	padding-top: 0;
+}
+.ftco-no-pb{
+	padding-bottom: 0;
+}
+//HEADING SECTION
+.heading-section{
+	font-size: 28px;
+	color: black;
+	small{
+		font-size: 18px;
+	}
+}
+
+//COVER BG
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+//SIDEBAR
+.wrapper {
+  width: 100%;
+}
+
+#sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  background: #010A4B;
+  color: #fff;
+  transition: all 0.3s;
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+
+  &.active{
+  	margin-left: -200px;
+  }
+
+  	.logo{
+		display: block;
+		width: 80px;
+		height: 80px;
+		margin: 0 auto;
+		
+		span{
+			display: block;
+		}
+  	}
+  	
+  	ul{
+    	li{
+    		font-size: 17px;
+			text-transform: uppercase;
+			font-weight: 200;
+			cursor: pointer;
+			
+    	}
+		i{
+			font-size: 40px;
+			margin: 10px auto 0px;
+			&:hover{
+				color: var(--ocean-blue);
+			}
+			// &:hover{
+			// 	color: var(--ocean-blue);
+			// }
+		}
+    	a{
+			display: block;
+			color: #F3FAFF;
+			margin: 0 auto 10px;
+			&:hover{
+				color: var(--ocean-blue);
+			}
+			// &:hover{
+			// 	color: var(--ocean-blue);
+			// }
+    	}
+		hr{
+			background-color: white;
+		}
+    	&.active{
+    		a{
+    			background: transparent;
+    			color: var(--ocean-blue);
+    		}
+    	}
+    }
+  
+//   @include media-breakpoint-down(md){
+//     margin-left: -180px;
+//     &.active {
+//         margin-left: 0;
+//     }
+//   }
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+// #sidebarCollapse{
+// 	span{
+// 		@include media-breakpoint-down(md){
+// 	    display: none;
+// 		}
+// 	}
+// }
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+
+.btn{
+	&.btn-primary{
+		background: var(--ocean-blue);
+		border-color: var(--ocean-blue);
+		&:hover, &:focus{
+			background: var(--ocean-blue) !important;
+			border-color: var(--ocean-blue) !important;
+		}
+	}
+}
+
+.footer{
+	margin-top: 120px;
+	p{
+		color: rgba(255,255,255,.5);
+	}
+}
+
+#studentPortalNav{
+	i{
+		font-size: 36px;
+		margin: 15px;
+		color: #010A4B;
+	}
+}
+.subject-info{
+	i{
+		color: whitesmoke;
+		font-size: 30px;
+	}
+	h3, h6{
+		margin-left: 13px;
+		color: #E8F1F9;
+	}
+
+	h3{
+		font-size: 24px;
+		font-weight: 200;
+	}
+
+	h6{
+		margin: 10px auto 15px 13px;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	img{
+		border-radius: 50%;
+		width: 70px;
+		margin: 15px auto 15px 13px;
+	}
+	
+	.modal-body, .modal-footer, .modal-header{
+		background-color: #010A4B;
+	}
+
+	.modal-header{
+		border-bottom: 1px solid white;
+	}
+}
+#announcements{
+	height: 180px;
+	background-color: #E8F1F9;
+	padding: 25px;
+	margin: auto;
+	width: 100%;
+	border-radius: 15px;
+
+	i{
+		font-size: 36px;
+		margin-left: 30px;
+		color: #010A4B;
+
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+.vl {
+	border-left: 12px solid green;
+	height: 60px;
+ }
+
+.todaysclass{
+	margin: 25px auto;
+	padding: 0 25px 25px 10px;
+	width: 700px;
+}
+
+.listofclasses{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10px;
+
+	img{
+		height: 60px;
+	}
+
+	i{
+		font-size: 40px;
+	}
+	#subj1{
+		color: #010A4B;
+		margin-left: 370px;
+	}
+	#subj2{
+		color: #DB222A;
+		margin-left: 370px;
+	}
+	#subj3{
+		color: #1F7A8C;
+		margin-left: 370px;
+	}
+	#subj4{
+		color: #F4B942;
+		margin-left: 200px;
+	}
+	#subj5{
+		color: #A31621;
+		margin-left: 200px;
+	}
+}
+
+.usernotes{
+	min-height: 80vh;
+	padding: 0;
+}
+
+.notes-input{
+	padding: 20px;
+	
+	h4{
+		font-size: 30px;
+		font-weight: 700;
+		color: #010A4B;
+	}
+	i{
+		font-size: 30px;
+		color: whitesmoke;
+		margin-right: 10px;
+	}
+	a{
+		font-size: 17.5px;
+		color: whitesmoke;
+	}
+
+	.btn{
+		height: 50px;
+		padding: auto;
+		background-color: #043EA7;
+		margin-left: 400px;
+	}
+}
+
+.calendar-event{
+	padding: 20px;
+	
+	h4{
+		font-size: 30px;
+		font-weight: 700;
+		color: #010A4B;
+	}
+	i{
+		font-size: 30px;
+		color: whitesmoke;
+		margin-right: 10px;
+	}
+	a{
+		font-size: 17.5px;
+		color: whitesmoke;
+	}
+
+	.btn{
+		height: 50px;
+		padding: auto;
+		background-color: #A87309;
+		margin-left: 320px;
+	}
+}
+
+.calendar{
+	img{
+		width: 90%;
+	}
+}
+
+.classmodules{
+	margin-left: 20px;
+	margin-top: 30px;
+
+	img{
+		width: 310px;
+		margin: 8px;
+		cursor: pointer;
+	}
+}
+
+.profile{
+	p{
+		font-size: 15px;
+	}
+	button{
+		padding: 0;
+		margin: 0;
+	}
+}

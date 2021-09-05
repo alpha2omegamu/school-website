@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header, section {
+  overflow-x: hidden;
+}
+
+:root {
+  --bodyFont: 'Poppins', sans-serif;
+  --dark-blue: #010A4B;
+  --ocean-blue: #043EA7;
+  --light-blue: #E1F1FD;
+  --page-bg: #F3FAFF;
+}
+
+body {
+  background-color: var(--page-bg);
+  font-family: var(--bodyFont);
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  color: var(--ocean-blue);
+}
+
+a:hover, a:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+button {
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+button:hover, button:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: var(--bodyFont);
+  color: black;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+}
+
+.ftco-section {
+  padding: 7em 0;
+}
+
+.ftco-no-pt {
+  padding-top: 0;
+}
+
+.ftco-no-pb {
+  padding-bottom: 0;
+}
+
+.heading-section {
+  font-size: 28px;
+  color: black;
+}
+
+.heading-section small {
+  font-size: 18px;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  background: #010A4B;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -200px;
+}
+
+#sidebar .logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+#sidebar .logo span {
+  display: block;
+}
+
+#sidebar ul li {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#sidebar ul i {
+  font-size: 40px;
+  margin: 10px auto 0px;
+}
+
+#sidebar ul i:hover {
+  color: var(--ocean-blue);
+}
+
+#sidebar ul a {
+  display: block;
+  color: #F3FAFF;
+  margin: 0 auto 10px;
+}
+
+#sidebar ul a:hover {
+  color: var(--ocean-blue);
+}
+
+#sidebar ul hr {
+  background-color: white;
+}
+
+#sidebar ul.active a {
+  background: transparent;
+  color: var(--ocean-blue);
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn.btn-primary {
+  background: var(--ocean-blue);
+  border-color: var(--ocean-blue);
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background: var(--ocean-blue) !important;
+  border-color: var(--ocean-blue) !important;
+}
+
+.footer {
+  margin-top: 120px;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#studentPortalNav i {
+  font-size: 36px;
+  margin: 15px;
+  color: #010A4B;
+}
+
+.subject-info i {
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.subject-info h3, .subject-info h6 {
+  margin-left: 13px;
+  color: #E8F1F9;
+}
+
+.subject-info h3 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.subject-info h6 {
+  margin: 10px auto 15px 13px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.subject-info img {
+  border-radius: 50%;
+  width: 70px;
+  margin: 15px auto 15px 13px;
+}
+
+.subject-info .modal-body, .subject-info .modal-footer, .subject-info .modal-header {
+  background-color: #010A4B;
+}
+
+.subject-info .modal-header {
+  border-bottom: 1px solid white;
+}
+
+#announcements {
+  height: 180px;
+  background-color: #E8F1F9;
+  padding: 25px;
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#announcements i {
+  font-size: 36px;
+  margin-left: 30px;
+  color: #010A4B;
+}
+
+#announcements i:hover {
+  cursor: pointer;
+}
+
+.vl {
+  border-left: 12px solid green;
+  height: 60px;
+}
+
+.todaysclass {
+  margin: 25px auto;
+  padding: 0 25px 25px 10px;
+  width: 700px;
+}
+
+.listofclasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.listofclasses img {
+  height: 60px;
+}
+
+.listofclasses i {
+  font-size: 40px;
+}
+
+.listofclasses #subj1 {
+  color: #010A4B;
+  margin-left: 370px;
+}
+
+.listofclasses #subj2 {
+  color: #DB222A;
+  margin-left: 370px;
+}
+
+.listofclasses #subj3 {
+  color: #1F7A8C;
+  margin-left: 370px;
+}
+
+.listofclasses #subj4 {
+  color: #F4B942;
+  margin-left: 200px;
+}
+
+.listofclasses #subj5 {
+  color: #A31621;
+  margin-left: 200px;
+}
+
+.usernotes {
+  min-height: 80vh;
+  padding: 0;
+}
+
+.notes-input {
+  padding: 20px;
+}
+
+.notes-input h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #010A4B;
+}
+
+.notes-input i {
+  font-size: 30px;
+  color: whitesmoke;
+  margin-right: 10px;
+}
+
+.notes-input a {
+  font-size: 17.5px;
+  color: whitesmoke;
+}
+
+.notes-input .btn {
+  height: 50px;
+  padding: auto;
+  background-color: #043EA7;
+  margin-left: 400px;
+}
+
+.calendar-event {
+  padding: 20px;
+}
+
+.calendar-event h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #010A4B;
+}
+
+.calendar-event i {
+  font-size: 30px;
+  color: whitesmoke;
+  margin-right: 10px;
+}
+
+.calendar-event a {
+  font-size: 17.5px;
+  color: whitesmoke;
+}
+
+.calendar-event .btn {
+  height: 50px;
+  padding: auto;
+  background-color: #A87309;
+  margin-left: 320px;
+}
+
+.calendar img {
+  width: 90%;
+}
+
+.classmodules {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.classmodules img {
+  width: 310px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.profile p {
+  font-size: 15px;
+}
+
+.profile button {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student Portal</title>
+      <link 
+         rel="stylesheet" 
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+         crossorigin="anonymous"
+      >
+      <script
+			src="https://kit.fontawesome.com/64d58efce2.js"
+			crossorigin="anonymous"
+		></script>
+      <link rel='stylesheet' href='../css/portal.css'>
+      
+   </head>
+
+   <body>
+      <!--MAIN CONTAINER--------------->
+		<div class="wrapper d-flex align-items-stretch justify-content-center">
+			
+			<!--SIDEBAR---------------------->
+			<nav id="sidebar">
+				<div class="p-3 pt-5">
+					<a href="../src/index.html" class="img logo rounded-circle mb-5" style="background-image: url(../img/logo1.png);"></a>
+					<ul class="list-unstyled text-center">
+						<li>
+							<a href="home.html">
+							<i class="fas fa-home" href='#'></i><br/>
+							Home</a><hr>
+						</li>
+						<li>
+							<a href="calendar.html">
+							<i class="far fa-calendar"></i><br/>
+							Calendar</a><hr>
+						</li>
+						<li>
+							<a href="enrollment.html">
+							<i class="fas fa-chalkboard-teacher"></i><br/>
+							Enrollment</a><hr>
+						</li>
+						<li>
+							<a href="profile.html">
+							<i class="fas fa-user"></i><br/>
+							Profile</a><hr>
+						</li>
+					</ul>
+
+					<div class="footer">
+						<p>
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</nav>
+			
+			<!--MAIN BODY-------------------->
+			<div id="content" class="p-4 p-md-5r">
+				<nav class="navbar navbar-expand-lg p-0 mt-0 ">
+					<div class="container-fluid">
+						<div class="col-sm-7">
+							<form>
+								<input type="text" id="dateToday" readonly class="form-control-plaintext">	
+							</form>
+						</div>
+						<!-- <p id='#dateToday'></p> -->
+						<div class="collapse navbar-collapse" id="studentPortalNav">
+							<ul class="nav navbar-nav ml-auto">
+								<li class="nav-item">
+									<a href='#'><i class="far fa-bell"></i></a>
+								<li class="nav-item">
+									<a href='#'><i class="fas fa-cog slow-spin fa-5x fa-fw"></i></a>
+								</li>
+								<li class='nav-item'>
+									<a href='login.html'><i	i class="fas fa-sign-out-alt"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="row container-fluid">
+					<div class='enrollment container col-md-9'>
+                  <h4>Profile</h4>
+                  <form>
+							<div class="form-group row">
+								<label for="student-id" class="col-sm-2 col-form-label">Student ID</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-id" readonly>
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="first-name" class="col-sm-2 col-form-label">First Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="first-name" placeholder="First Name">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="last-name" class="col-sm-2 col-form-label">Last Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="last-name" placeholder="Last Name">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="middle-name" class="col-sm-2 col-form-label">Middle Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="middle-name" placeholder="Middle Name">
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label for="birth-date" class="col-sm-2 col-form-label">Birthdate</label>
+								<div class="col-sm-10">
+									<input type="date" class="form-control" id="birth-date">
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label for="contact-number" class="col-sm-2 col-form-label">Contact Number</label>
+								<div class="col-sm-10">
+									<input type="tel" class="form-control" id="contact-number"  pattern="[0]{1}-[9]{1}-[0-9]{9}" placeholder="Contact Number">
+								</div> 
+							</div>
+
+							<div class="form-group row">
+								<label for="email-address" class="col-sm-2 col-form-label">Email Address</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="email-address" placeholder="Email Address">
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label for="address" class="col-sm-2 col-form-label">Address</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="address" placeholder="Address">
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label for="city" class="col-sm-2 col-form-label">City</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="city" placeholder="City">
+								</div>
+							</div>
+
+							<hr>
+							<div class="form-group row text-right mt-4">
+								<div class="col-sm-12">
+								 <button type="submit" class="btn btn-secondary">Cancel</button> 
+								 <button type="submit" class="btn btn-primary" id='student-profile'>Submit</button>
+								</div>
+							 </div>
+							<!-- <h5>In case of Emergency</h5>
+					
+							<div class="form-group row">
+								<label for="student-id" class="col-sm-2 col-form-label">Guardian</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-id" placeholder="Student ID">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="student-id" class="col-sm-2 col-form-label">Relationship</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-id" placeholder="Student ID">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="student-id" class="col-sm-2 col-form-label">Contact Number</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-id" placeholder="Student ID">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="student-id" class="col-sm-2 col-form-label">Address</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-id" placeholder="Student ID">
+								</div>
+							</div>
+							
+							<div class="form-group row">
+								<label for="student-id" class="col-sm-2 col-form-label"></label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-id" placeholder="Student ID">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="student-id" class="col-sm-2 col-form-label">City</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="student-id" placeholder="Student ID">
+								</div>
+							</div>
+
+							<div class="form-group row">
+								<label for="grade-section" class="col-sm-2 col-form-label">Region</label>
+								<div class="col-sm-10">
+									<select class="custom-select my-1 mr-sm-2" id="grade-section">
+										<option>Section</option>
+										<option disabled>──────────</option>
+										<option value="Grade 1">Hydogen</option>
+										<option value="Grade 2">Helium</option>
+										<option value="Grade 3">Nitrogen</option>
+									</select>	
+								</div>
+							</div>
+
+							<!-- <fieldset class="form-group">
+								<div class="row">
+									<legend class="col-form-label col-sm-2 pt-0">Admission Status</legend>
+									<div class="col-sm-10">
+										<div class="form-check">
+										<input class="form-check-input" type="radio" name="gridRadios" id="old-student" value="Old Student" checked>
+										<label class="form-check-label" for="gridRadios1">
+											Old Student
+										</label>
+										</div>
+										<div class="form-check">
+										<input class="form-check-input" type="radio" name="gridRadios" id="new-student" value="New Student">
+										<label class="form-check-label" for="gridRadios2">
+											New Student/Transferee
+										</label>
+										</div>
+									</div>
+								</div>
+							</fieldset> -->
+							<!-- <div class="form-group row text-right mt-4">
+							  <div class="col-sm-12">
+								<button type="submit" class="btn btn-secondary">Cancel</button> 
+								<button type="submit" class="btn btn-primary">Proceed</button>
+							  </div>
+							</div>
+						 </form> --> 
+						
+						
+						<!-- <form> -->
+
+							<!-- <div class="form-row">
+								<div class="col-2">
+                     		<label class="my-1 mr-2" for="inlineFormCustomSelectPref">Student ID: </label>
+								</div>
+								<div class="col-8">
+									<select class="custom-select my-1 mr-sm-2" id="subjectList">
+										<option selected>Choose...</option>
+										<option value="Music">Music</option>
+										<option value="Health">Health</option>
+										<option value="Drawing">Drawing</option>
+                     		</select>
+								</div>
+							<div class="form-row">
+								<div class="col-2">
+                     	<label class=" mr-2" for="inlineFormCustomSelectPref">Subjects</label>
+								</div>
+								<div class="col-8">
+								<select class="custom-select my-1 mr-sm-2" id="subjectList">
+                        <option selected>Choose...</option>
+                        <option value="Music">Music</option>
+                        <option value="Health">Health</option>
+                        <option value="Drawing">Drawing</option>
+                     </select>
+						</div>
+                     
+                   
+                     <button type="submit" class="btn btn-primary my-1" id='addClass'>Enlist Class</button>
+						</div> -->
+						</form>
+                   
+               </div>
+               <div class='container col-md-3 text-right'>
+						<img src='../img/profilephoto1.png' style='width: 280px; border-radius: 15px; margin-bottom: 20px;'>
+						<h5 class='text-center ml-5' style="font-weight: 500;">Alexandra Trese</h5>
+                  <!-- <img src='../img/profilephoto1.png' style='width: 280px; margin-bottom: 15px; border-radius: 10px;
+						border: 3px solid darkblue; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+						<img src='../img/flow2.png' style='width: 280px; margin-bottom: 15px; border-radius: 10px;
+						border: 3px solid burlywood; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+						<img src='../img/flow3.png' style='width: 280px; margin-bottom: 15px; border-radius: 10px;
+						border: 3px solid darkgreen; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+						<img src='../img/flow4.png' style='width: 280px; margin-bottom: 15px; border-radius: 10px;
+						border: 3px solid palevioletred; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'> -->
+               </div>
+				</div>
+			</div>
+		</div>
+
+      <!-----------JS SCRIPTS----------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src='../js/Profile.js'></script>
+		<script src='../js/Greetings.js'></script>
+   </body>
+</html>
