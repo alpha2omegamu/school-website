@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>School Website</title>
+      <link 
+         rel="stylesheet" 
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+         crossorigin="anonymous"
+      >
+      <link rel='stylesheet' href='../css/style.css'>
+   </head>
+   
+   <body>
+      <header>
+         <!-- <div class="container p-0"> -->
+            <div class='logo d-flex flex-row justify-content-md-start align-items-center flex-wrap'>
+               <img src='../img/logo.png'>
+            </div>
+         <!-- </div> -->
+         <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                     </li>
+                     
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                           href="#" 
+                           id="navbarDropdown" 
+                           role="button" 
+                           data-toggle="dropdown" 
+                           aria-haspopup="true" 
+                           aria-expanded="false">
+                           About
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#">History</a>
+                           <a class="dropdown-item" href="#">Mission-Vision</a>
+                           <a class="dropdown-item" href="#">Core Values</a>
+                           <!-- <a class="dropdown-item disabled" href="#">Faculty and Staff</a> -->
+                        </div>
+                     </li>
+                   
+                     <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Admissions</a>
+                     </li>
+                   
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                           href="#" 
+                           id="navbarDropdown" 
+                           role="button" 
+                           data-toggle="dropdown" 
+                           aria-haspopup="true" 
+                           aria-expanded="false">
+                        Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#">Program Offered</a>
+                           <a class="dropdown-item" href="#">Scholarships</a>
+                        </div>
+                     </li>
+                   
+                     <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Resources</a>
+                     </li>
+
+                  </ul>
+                  
+                  <div class="mr-auto"></div>
+                  <li class="nav-item" style='list-style-type:none;'>
+                     <a class="nav-link" href="../portal/login.html"><i class="bi bi-person-fill"></i> Login</a>
+                  </li>
+
+               </div>
+            </nav>
+         </div>
+
+         <div class="container text-left my-4 announcement">
+            <div class="row">
+               <div class="col-md-12 col-sm-12 rounded">
+                  <h4>Announcement <i class="bi bi-megaphone"></i></h4>
+                  <p>Enrollment deadline is on September 01, 2021.</p>
+                  <!-- <button class='btn btn-light py-2'>Learn more</button> -->
+               </div>
+            </div>
+         </div>
+
+      </header>
+
+      <main>
+         <section class='featured text-left py-3'>
+            <div class="container">
+               <h3>Covid Delta Variant Now in PH</h3>
+               <p>Stay safe everyone!</p>
+               <button class='btn btn-light py-2'>Read more</button>
+            </div>
+         </section>
+
+         <section class='latest'>
+            <div class="container text-left pt-3">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h3>Latest</h3>
+                     <div class="cards-container my-5 d-flex flex-row justify-content-md-between flex-wrap">
+                        
+                        <div class="card" style="width: 21rem;">
+                           <img class="card-img-top p-4" src="../img/featured1.png" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Hogwarts tops International Quidditch Cup</h5>
+                              <p class="card-text">Harry Potter leads Hogwarts in the recent Quidditch Cup held at...</p>
+                           </div>
+                        </div>
+      
+                        <div class="card" style="width: 21rem;">
+                           <img class="card-img-top p-4" src="../img/featured2.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Covid Vaccination offered to Hogwarts students</h5>
+                              <p class="card-text">Students can now avail free Covid-19 vaccination by registering at...</p>
+                           </div>
+                        </div>
+      
+                        <div class="card" style="width: 21rem;">
+                           <img class="card-img-top p-4" src="../img/featured3.jpg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Does Draco deserve a redemption arc?</h5>
+                              <p class="card-text">Draco Malfoy, 19, is the son of Lucius and Narcissa Malfoy...</p>
+                           </div>
+                        </div>
+                   
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </section>
+         <hr>
+         <section class='about'>
+            <div class="container text-left mb-5">
+               <div class='row'>
+                  <div class="col-md-6">
+                     <h3>Hogwarts</h3>
+                     <hr>
+                     <p class='text-justify'>
+                        At some point in the tenth century, four of the greatest witches and wizards that ever lived 
+                        founded Hogwarts School of Witchcraft and Wizardry. Their names were Godric Gryffindor, 
+                        Rowena Ravenclaw, Helga Hufflepuff and Salazar Slytherin. As The Sorting Hat told us, their 
+                        reason for doing so was because they had the ‘selfsame yearning, to make the world’s best magic school’, 
+                        and once they did, each created their own house to represent a personality and skill that they wanted to nurture. 
+                     </p>
+                     <p class='text-justify'>
+                        Gryffindor students embodied bravery and chivalry; Ravenclaw, intelligence and wit; Hufflepuff, 
+                        loyalty and fair play; and Slytherin, the values of being sly and cunning.It’s a popular wizarding 
+                        theory that Rowena Ravenclaw came up with the name of Hogwarts.
+                     </p>
+                  </div>
+                  <div class="col-md-6">
+                     <img src='../img/school.png'/>  
+                  </div>
+               </div>
+               <div class="row mt-5">
+                  <div class="col-md-12">
+                     <h3>mission and vision</h3>
+                     <hr>
+                     <p class='text-justify'>
+                        Hogwarts School of Witchcraft and Wizardry is a leading educational institution that promotes a strong foundation 
+                        for family and world citizenship, advocates wisdom for peace and prosperity, and creates opportunities 
+                        for achievement and success. With its reputation as one of the best schools of its kind in the world, 
+                        Hogwarts boasts a faculty of wise and talented professors who aim to make a change.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+        <div class="container">
+         <video width='100%' controls>
+            <source src="https://youtu.be/z4K2F_OALPQ" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+         
+         <section class='core-values'>
+            <div class="container text-left mb-5">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h3>Hogwarts Core Values</h3>
+                     <hr>
+                     <h5>WISDOM-KNOWLEDGE</h5>
+                     <p>
+                        The gift of sound judgment shall be internalized by every Hogwarts. The ability to use their knowledge 
+                        is a perfection that every Hogwarts aims to achieve which is anchored from the concept of Hogwarts as 
+                        the seat of intellectual refinement. Through all of these the act of knowing and accumulating a body 
+                        of facts and information comes along.
+                     </p>
+                     <h5>COMPETENCE</h5>
+                     <p>
+                        The Hogwarts way is always geared towards competence in all endeavors. Such that, one is capable to do 
+                        beyond what is expected of him or her. Competence can only be acquired after a thorough process of refinement.
+                     </p>
+                     <h5>RESPONSIBILITY</h5>
+                     <p>
+                        Hogwarts expects from its students to develop the ability to respond to the needs and demands of the 
+                        present life conditions. Being responsible enough to become good citizens of the country can pave the way 
+                        for a brighter future of the generations to come.
+                     </p>
+                     <h5>INNOVENTIVENESS</h5>
+                     <p>
+                        An Hogwarts student seeks to introduce new things. As an inherent skill that is cascaded within the framework 
+                        of the institution, introducing new methods and ideas to make changes, is an indicator of a society in progress 
+                        which teachers shall purposely aim to develop in every student.
+                     </p>
+                     <h5>LOVE</h5>
+                     <p>
+                        Love is the core of every family. It creates a special bond among all peoples of the world. Hogwarts aims to 
+                        develop in every child the love for ones self, family and society that is geared towards progress.
+                     </p>
+                     <h5>INTEGRITY</h5>
+                     <p>
+                        The Hogwarts way contemplates on the wholeness of every student who can speak his mind and express his feelings 
+                        with utmost sincerity. The state of being humble or modest is expected to be seen from every Hogwarts student. 
+                        The school aims to produce students who can <i>fly or soar high with their dreams yet still grounded with their 
+                        sense of humility</i>.
+                     </p>
+                     <h5>SELF-DESCIPLINE</h5>
+                     <p>
+                        Hogwarts aims to help every student to develop in them a habit of system and order by way of training and 
+                        conditioning them to become obedient and self-controlled. Organizing ones self gives an edge over the others.
+                     </p>
+                     <h5>TRUTHFULNESS</h5>
+                     <p>
+                        "Honesty is the best policy". Every Hogwarts deserves to know the truth, embrace it and to be witnessing citizens
+                        of the community. Hogwarts aims to help every student to acquire the value of truthfulness towards becoming better 
+                        citizens of the country.
+                     </p>
+                     <h5>GENEROSITY</h5>
+                     <p>
+                        With generosity in diversity, the Hogwarts way creates a challenge to every student to manifest a genuine spirit 
+                        of sharing and giving despite the existence of diverse cultures, religion and ethnicities. Hogwarts believes in 
+                        the spirit of generosity across culture, religion and race.
+                     </p>
+                     <h5>LOYALTY</h5>
+                     <p>
+                        It is the aim of this institution to inspire all students and to develop in them the sense of undying support to 
+                        their Alma Mater, mentors, classmates and friends.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class='programs-offered'>
+            <div class="container text-left mb-5">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h3>Programs Offered</h3>
+                     <hr>
+                     <h5>Gradeschool (Grades 1-10)</h5>
+                     <p>
+                        Students in Grades 1 to 10 will experience an enhanced, context-based, and spiral progression-learning 
+                        curriculum with the following subjects:
+                     </p>
+                     <ul>
+                        <li>Mother Tongue</li>
+                        <li>Filipino</li>
+                        <li>English</li>
+                        <li>Mathematics</li>
+                        <li>Science</li>
+                        <li>Araling Panlipunan</li>
+                        <li>Edukasyon sa Pagpapakatao (EsP)</li>
+                        <li>Music</li>
+                        <li>Arts</li>
+                        <li>Health</li>
+                        <li>Edukasyong Pantahanan at Pangkabuhayan (EPP)</li>
+                        <li>Technology and Livehood Education (TLE)</li>
+                     </ul>
+                     <h5>Senior High School (Grades 11-12)</h5>
+                     <p>
+                        Hogwarts International School also offers various strands in the K-12 program, including <span>STEM</span> (Science, Technology
+                        Engineering, and Mathematics), <span>HUMSS</span> (Humanities and Social Sciences), <span>ABM</span> (Accountancy, Business and Management),
+                        <span>GAS</span> (General Academic Strand), Arts and Design, and Sports Track.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class='scholarships'>
+            <div class="container text-left mb-5">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h3>Scholarships/Enrollment Incentives</h3>
+                     <hr>
+                     <h5>HOGWARTS SCHOLARSHIPS</h5>
+                     <ul>
+                        <li>Founder Scholarship</li>
+                     </ul>
+                     <h5>Enrollment Incentives</h5>
+                     <ul>
+                        <li>Early Enrollment (Enroll on or before April 30, 2021)</li>
+                        <li>Full Payment</li>
+                        <li>Siblings Discount</li>
+                        <li>Bring-A-Friend</li>
+                        <li>Alumni Discount</li>
+                        <li>Loyalty Privileges</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class='scholarships'>
+            <div class="container px-3 py-3 mb-5">
+               <h3>Applying to Hogwarts</h3>
+               <hr>
+               <p>Refer to some of Frequently Asked Questions</p>
+               <button class="accordion">How do I apply to Hogwarts International School of Magic and Wizardry?</button>
+               <div class="panel">
+               <p>Please refer to the Admissions page to begin the application process.</p>
+               </div>
+               
+               <button class="accordion">What is the cost of tuition at Hogwarts</button>
+               <div class="panel">
+               <p>Tuition and fees at Hogwarts vary based on your child(ren)'s age. Refer to our tuition and fees page.</p>
+               </div>
+               
+               <button class="accordion">What is the deadline for submitting an application?</button>
+               <div class="panel">
+               <p>
+                  The application deadline for the 2022-2023 school year is September 01, 2021. After this deadline has passed, 
+                  Hogwarts will then move into rolling admissions season.
+               </p>
+               </div>
+               
+               <button class="accordion">Do you offer visiting days?</button>
+               <div class="panel">
+               <p>
+                  This year, Hogwarts School will host two Open Houses; Sunday, October 23 at 1:00 p.m. and Thursday, November 18 at 9:30 a.m. 
+                  Open Houses are a fantastic way for prospective families to see the Hogwarts campus, 
+                  learn about our compelling continuum, as well as meet staff, faculty and current students.
+               </p>
+               </div>
+               
+               <button class="accordion">Does Hogwarts require specific testing for admission?</button>
+               <div class="panel">
+               <p>
+                  Required testing depends on the age of the child applying to attend Hogwarts. Once you have submitted an inquiry form, 
+                  you will be able to access the Admissions Portal which includes a comprehensive list of all necessary testing and required forms.
+               </p>
+               </div>
+
+               <button class="accordion">Is Financial Aid available?</button>
+               <div class="panel">
+               <p>
+                  Hogwarts School believes that qualified students who desire an education should not be denied that opportunity 
+                  because of economic hardship.  Thus, we are proud to offer financial aid (for new and existing Hogwarts families) 
+                  that helps us provide a balanced school community and at the same time keep the school financially healthy.  
+                  Please note that financial aid application for new families can only be processed if the student’s admissions application is complete.
+               </p>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-------------FOOTER------------->
+      <footer id="footer">
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 footer-contact">
+                     <h4>Hogwarts Intl<span>.</span></h4>
+                     <p>
+                        Platform 3/4 <br>
+                        Highlands, Scotland<br>
+                        Great Britain <br><br>
+                        <strong>Phone:</strong> +63 XXX XXX XXXX<br>
+                        <strong>Email:</strong> hogwarts@gmail.com<br>
+                     </p>
+                  </div>
+                  
+                  <div class="col-lg-6 col-md-6 py-2 footer-links">
+                     <h5>Site Links</h5>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Academics</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Alumni Center</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Mission-Vision</a></li>
+                        <li><a href="#">Core Values</a></li>
+                        <li><a href="#">Faculty and Staff</a></li>
+                        <li><a href="#">Academic Programs</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="social-links py-2 text-center">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+         </div>
+
+         <div class="container py-4">
+            <div class="copyright">
+               &copy; All Rights Reserved 2021
+            </div>
+         </div>
+
+      </footer>
+      
+      <!-----------JS SCRIPTS----------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src='../js/main.js'></script>
+   </body>
+</html>
